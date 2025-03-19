@@ -1,6 +1,6 @@
 FROM alpine:latest as gh
 RUN apk --no-cache add wget tar zip
-RUN wget https://github.com/cli/cli/releases/download/v0.5.7/gh_0.5.7_linux_amd64.tar.gz
-RUN tar -zxvf gh_0.5.7_linux_amd64.tar.gz
-RUN chmod a+x gh_0.5.7_linux_amd64/bin/gh
-RUN mv gh_0.5.7_linux_amd64/bin/gh gh
+RUN wget https://github.com/cli/cli/releases/download/v2.68.1/gh_2.68.1_linux_amd64.tar.gz
+RUN tar -zxvf gh_2.68.1_linux_amd64.tar.gz
+RUN chmod a+x gh_2.68.1_linux_amd64/bin/gh
+RUN mv gh_2.68.1_linux_amd64/bin/gh gh
